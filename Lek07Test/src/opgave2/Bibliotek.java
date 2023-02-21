@@ -1,47 +1,30 @@
 package opgave2;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Locale;
 
 public class Bibliotek {
-    private double gebyr;
+
+    public double beregnGebyr(LocalDate beregnetDato, LocalDate faktiskDato, boolean voksen) {
 
 
-    public double getGebyr() {
-        return gebyr;
-    }
-
-    public void setGebyr(double grundGebyr) {
-        if (grundGebyr > 0) {
-            throw new RuntimeException("Gebyr skal starte på 0");
+        if (!beregnetDato.isBefore(faktiskDato)) {
+            throw new RuntimeException("Beregnet dato skal være før faktisk dato");
         }
-        gebyr = grundGebyr;
-    }
+        int dageimellem = (int) beregnetDato.until(faktiskDato, ChronoUnit.DAYS);
+        int bøde;
 
-
-    public double beregnGebyr(LocalDate faktiskDato, LocalDate beregnetDato, boolean voksen) {
-        double praemie = gebyr;
-        if (gebyr > 0) {
-            throw new RuntimeException("Grundpraeme skal starte på 0");
+        if (dageimellem >= 1 && dageimellem <= 7) {
+            bøde = 10;
+        } else if (dageimellem >= 8 && dageimellem <= 14) {
+            bøde = 30;
+        } else {
+            bøde = 45;
         }
-        if (faktiskDato.isBefore(beregnetDato) || faktiskDato.isEqual(beregnetDato)) {
-            praemie = 0;
+        if (voksen) {
+            bøde *= 2;
         }
-
-        if (voksen == true) {
-            praemie = praemie * 2;
-        }
-        if (faktiskDato.isAfter(beregnetDato.plusDays(7))) {
-            praemie = 10;
-        }
-        if (faktiskDato.isAfter(beregnetDato.plusDays(14))) {
-            praemie = 30;
-        }
-        else {
-            praemie = 45;
-        }
-
-
-        return praemie;
+        return bøde;
     }
 }
