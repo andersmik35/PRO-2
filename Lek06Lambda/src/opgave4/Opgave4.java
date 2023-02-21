@@ -30,7 +30,7 @@ public class Opgave4 {
         return count;
     }
 
-    /*public static int countStreng(List<String> list, String sub){
+    public static int countStreng(List<String> list, String sub) {
         int count = 0;
         int split = Integer.MAX_VALUE;
 
@@ -38,15 +38,16 @@ public class Opgave4 {
         String p1;
         String p2;
         Iterator<String> itr = list.iterator();
-        while (itr.hasNext()){
+        while (itr.hasNext()) {
+            p = itr.next();
             split = p.indexOf(" ");
-            if (split != -1){
-                p1 = p.substring(0,split);
+            if (split != -1) {
+                p1 = p.substring(0, split);
                 p2 = p.substring(split + 1, p.length());
-                if (p1.contains(sub)){
+                if (p1.contains(sub)) {
                     count++;
                 }
-                if (p2.contains(sub)){
+                if (p2.contains(sub)) {
                     count++;
                 }
             } else if (p.contains(sub)) {
@@ -54,6 +55,7 @@ public class Opgave4 {
 
             }
         }
-        return count;*/
+        return count;
+    }
 }
 
