@@ -20,9 +20,6 @@ public class MainMap {
             int next = iterator.next();
             System.out.println(map.get(next) + " " + next);
         }
-
-
-
         //(2,4), (3,9), (4, 16), (5, 25) og (6,36)
     }
 }
