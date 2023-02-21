@@ -14,13 +14,16 @@ public class Opgave4 {
         names.add("Leo Hansen");
         names.add("Jens Jensen");
 
-        System.out.println(countDelStreng(names, "Jens"));
+       // System.out.println(countDelStreng(names, "Jens"));
+
+
+        System.out.println(countStreng(names,"Jens"));
 
 
     }
 
 
-    public static int countDelStreng(List<String> list, String sub) {
+    /*public static int countDelStreng(List<String> list, String sub) {
         int count = 0;
         for (String str : list) {
             if (str.contains(sub)) {
@@ -28,7 +31,7 @@ public class Opgave4 {
             }
         }
         return count;
-    }
+    }*/
 
     public static int countStreng(List<String> list, String sub) {
         int count = 0;
