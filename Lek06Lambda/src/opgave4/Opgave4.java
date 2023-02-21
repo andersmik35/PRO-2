@@ -46,7 +46,7 @@ public class Opgave4 {
             split = p.indexOf(" ");
             if (split != -1) {
                 p1 = p.substring(0, split);
-                p2 = p.substring(split + 1, p.length());
+                p2 = p.substring(split + 1,     p.length());
                 if (p1.contains(sub)) {
                     count++;
                 }
