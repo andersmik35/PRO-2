@@ -14,10 +14,10 @@ public class Opgave4 {
         names.add("Leo Hansen");
         names.add("Jens Jensen");
 
-       // System.out.println(countDelStreng(names, "Jens"));
+        // System.out.println(countDelStreng(names, "Jens"));
 
 
-        System.out.println(countStreng(names,"Jens"));
+        System.out.println(countStreng(names, "Jens"));
 
 
     }
@@ -60,5 +60,25 @@ public class Opgave4 {
         }
         return count;
     }
+
+    /*
+    private static int rekursionDelString(List<String> list, String sub){
+        int result = 0;
+        int split = Integer.MAX_VALUE;
+
+        List<String> listcopy = new ArrayList<>(list);
+        if (list.size() == 0){
+            return 0;
+        }
+        String p;
+
+        String p1;
+        String p2;
+        p = listcopy.get(0);
+
+        split = p.indexOf(" ");
+        if (split != - 1)
+    }*/
+
 }
 
