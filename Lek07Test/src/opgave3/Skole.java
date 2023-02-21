@@ -1,13 +1,12 @@
 package opgave3;
 
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Skole {
     private String navn;
 
-    public Set<Studerende> studerende = new HashSet<>();
+    public List<Studerende> studerende = new ArrayList<>();
 
     public String getNavn() {
         return navn;
@@ -17,7 +16,7 @@ public class Skole {
         this.navn = navn;
     }
 
-    public Set<Studerende> getS() {
+    public List<Studerende> getS() {
         return studerende;
     }
 
@@ -47,20 +46,19 @@ public class Skole {
         return sum / counter;
     }
 
-    /*public Studerende found(int studieNr) {
-        int result = -1;
-        Studerende studerende1 = null;
+    public Studerende found(int studieNr) {
+        Studerende found = null;
         int i = 0;
-        while (result == -1 && i < studerende.size()) {
-            if (studerende.get(i).getStudieNr() == studieNr) {
-                result = i;
-                studerende1 = studerende.(i);
-            } else {
-                i++;
+        Iterator<Studerende> studerendeIterator = studerende.iterator();
+        while (found == null && studerendeIterator.hasNext()) {
+            Studerende studerende1 = studerendeIterator.next();
+            if (studerende1.getStudieNr() == studieNr){
+                found = studerende1;
             }
+
         }
-        return studerende1;
-    }*/
+        return found;
+    }
 
 
     @Override
