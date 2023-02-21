@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lek01Rekursion/Lek01Rekursion.iml" filepath="$PROJECT_DIR$/Lek01Rekursion/Lek01Rekursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek02Rekursion/Lek02Rekursion.iml" filepath="$PROJECT_DIR$/Lek02Rekursion/Lek02Rekursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek03DelLoesOgKombiner/Lek03DelLoesOgKombiner.iml" filepath="$PROJECT_DIR$/Lek03DelLoesOgKombiner/Lek03DelLoesOgKombiner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek04Tidskomplicitet/Lek04Tidskomplicitet.iml" filepath="$PROJECT_DIR$/Lek04Tidskomplicitet/Lek04Tidskomplicitet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek05Collections/Lek05Collections.iml" filepath="$PROJECT_DIR$/Lek05Collections/Lek05Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek06Lambda/Lek06Lambda.iml" filepath="$PROJECT_DIR$/Lek06Lambda/Lek06Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek07Test/Lek07Test.iml" filepath="$PROJECT_DIR$/Lek07Test/Lek07Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRO-2.iml" filepath="$PROJECT_DIR$/PRO-2.iml" />
+    </modules>
+  </component>
+</project>
