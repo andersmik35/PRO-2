@@ -1,0 +1,10 @@
+package opgave4_1;
+
+import java.util.Comparator;
+
+public class NavnCompare implements Comparator <Kunde> {
+    @Override
+    public int compare(Kunde o1, Kunde o2) {
+        return o1.getNavn().compareTo(o2.getNavn());
+    }
+}

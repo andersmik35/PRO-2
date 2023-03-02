@@ -5,38 +5,33 @@ import java.util.Map;
 
 public class Bag implements InterfaceBag {
 
-    private Map<String, Integer> indhold = new HashMap<>();
+    private static Map<String, Integer> indhold = new HashMap<>();
 
 
-    public void add(String s){
+    public void add(String s) {
         int amount = 1;
-        if (indhold.containsKey(s)){
+        if (indhold.containsKey(s)) {
             amount = indhold.get(s);
             amount++;
         }
-        indhold.put(s,amount);
+        indhold.put(s, amount);
     }
 
 
-    public void remove(String s){
-        if (indhold.containsKey(s)){
+    public void remove(String s) {
+        if (indhold.containsKey(s)) {
             int amount = indhold.get(s);
             amount--;
-            if (amount < 1){
+            if (amount < 1) {
                 indhold.remove(s);
-            }else {
-                indhold.put(s,amount);
+            } else {
+                indhold.put(s, amount);
             }
         }
     }
 
-
-    public int getCount(String s){
+    public int getCount(String s) {
         return indhold.get(s);
     }
-
-
-
-
 
 }
