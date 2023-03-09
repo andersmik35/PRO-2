@@ -5,7 +5,7 @@ public class Spiritus {
     private String betgenelse;
     
     public Spiritus(int prisen, String betgenelse) {
-        super();
+        super( );
         this.prisen = prisen;
         this.betgenelse = betgenelse;
     }
