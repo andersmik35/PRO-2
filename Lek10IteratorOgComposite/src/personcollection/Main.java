@@ -9,7 +9,7 @@ public class Main {
         Person p1 = new Person("Børge");
         Person p2 = new Person("Jens");
         Person p3 = new Person("Ok");
-        Person p4 = new Person("Hej");
+        //Person p4 = new Person("Hej");
 
         persons.add(p1);
         persons.add(p2);
@@ -17,7 +17,7 @@ public class Main {
 
         Iterator<Person> personIterator = persons.iterator();
         while (personIterator.hasNext()){
-            persons.add(p4);
+            //persons.add(p4);
             System.out.println(personIterator.next());
         }
     }

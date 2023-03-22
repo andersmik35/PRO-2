@@ -11,6 +11,10 @@
       <module fileurl="file://$PROJECT_DIR$/Lek07Test/Lek07Test.iml" filepath="$PROJECT_DIR$/Lek07Test/Lek07Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek08DBMS/Lek08DBMS.iml" filepath="$PROJECT_DIR$/Lek08DBMS/Lek08DBMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek08Designmoenstre/Lek08Designmoenstre.iml" filepath="$PROJECT_DIR$/Lek08Designmoenstre/Lek08Designmoenstre.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek09SingletongOgAdapter/Lek09SingletongOgAdapter.iml" filepath="$PROJECT_DIR$/Lek09SingletongOgAdapter/Lek09SingletongOgAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek10IteratorOgComposite/Lek10IteratorOgComposite.iml" filepath="$PROJECT_DIR$/Lek10IteratorOgComposite/Lek10IteratorOgComposite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek11Arkitektur/Lek11Arkitektur.iml" filepath="$PROJECT_DIR$/Lek11Arkitektur/Lek11Arkitektur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek11Serializable/Lek11Serializable.iml" filepath="$PROJECT_DIR$/Lek11Serializable/Lek11Serializable.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRO-2.iml" filepath="$PROJECT_DIR$/PRO-2.iml" />
     </modules>
   </component>
