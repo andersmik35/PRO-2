@@ -1,7 +1,8 @@
 package opgave2;
 
-public class SortedLinkedList {
-    // TODO: hvilke felt variable er nødvendige
+import java.util.Iterator;
+
+public class SortedLinkedList implements Iterable<String> {
     private Node first;
 
     public SortedLinkedList() {
@@ -109,6 +110,9 @@ public class SortedLinkedList {
         }
     }
 
+
+    // Opgave 4
+
     /**
      * Tilføjer alle elementerne fra list til den aktuelle liste.
      * Listen er fortsat sorteret i henhold til den naturlige ordning på
@@ -155,10 +159,46 @@ public class SortedLinkedList {
         }
     }
 
+    @Override
+    public SortedLinkedListIterator iterator() {
+        return new SortedLinkedListIterator();
+    }
+
 
     private class Node {
         public String data;
         public Node next;
+    }
+
+
+    private class SortedLinkedListIterator implements Iterator {
+
+        Node position;
+
+        public SortedLinkedListIterator() {
+            position = first;
+        }
+
+        @Override
+        public boolean hasNext() {
+            if (position == null) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        @Override
+        public String next() {
+            if (hasNext()) {
+                String data = position.data;
+                position = position.next;
+                return data;
+            } else {
+                return null;
+            }
+
+        }
     }
 }
 
