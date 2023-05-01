@@ -11,47 +11,66 @@ public class DoubleDropStack implements StackI {
 
     @Override
     public void push(Object element) {
-        first = null;
-        last = null;
+        Node newNode = new Node();
+        newNode.data = (String) element;
 
-
+        if (isEmpty()) {
+            first = newNode;
+            last = newNode;
+        } else {
+            last.next = newNode;
+            newNode.prev = last;
+            last = newNode;
+        }
+        count++;
     }
 
     @Override
     public Object pop() {
-        if (first == null){
+        if (first == null) {
             throw new NoSuchElementException();
         }
-        Object element = first.data;
-        first = first.next;
+        Object element = last.data;
+        last = last.prev;
+        if (last == null) {
+            first = null;
+
+        } else {
+            last.next = null;
+        }
         count--;
         return element;
     }
 
     @Override
     public Object peek() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return last.data;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return count == 0;
     }
 
     @Override
     public int size() {
-        return 0;
+        return count;
     }
 
-    public void dropOutStack(){
-        if (count > 5){
+    public void dropOutStack() {
+        if (count > 5) {
             first = first.next;
+            first.prev = null;
             count--;
 
 
         }
 
     }
+
     class Node {
         public String data;
         public Node next;
