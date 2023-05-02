@@ -47,14 +47,14 @@ public interface DequeI {
 	 *
 	 * @return the head element
 	 */
-	public Object getFirst();
+	public Object getHead();
 
 	/**
 	 * Returns the tail of this deque. The deque is unchanged.
 	 *
 	 * @return the tail element
 	 */
-	public Object getLast();
+	public Object getTail();
 
 	/**
 	 * The number of elements on the deque.
