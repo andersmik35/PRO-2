@@ -8,6 +8,11 @@ public class LinkedQueue implements QueueI {
     private Node tail;
     private int size;
 
+    public LinkedQueue() {
+        head = null;
+        tail = null;
+    }
+
 
 
 
