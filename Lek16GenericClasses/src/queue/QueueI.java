@@ -3,7 +3,7 @@ package queue;
 /**
  * An interface of a queue
  */
-public interface QueueI {
+public interface QueueI <E> {
 
 	/**
 	 * Checks whether this queue is empty.
@@ -18,21 +18,21 @@ public interface QueueI {
 	 * @param newElement
 	 *            the element to add
 	 */
-	public void enqueue(Object newElement);
+	public void enqueue(E newElement);
 
 	/**
 	 * Removes an element from the head of this queue.
 	 *
 	 * @return the removed element
 	 */
-	public Object dequeue();
+	public E dequeue();
 
 	/**
 	 * Returns the head of this queue. The queue is unchanged.
 	 *
 	 * @return the head element
 	 */
-	public Object getFront();
+	public E getFront();
 
 	/**
 	 * The number of elements on the queue.

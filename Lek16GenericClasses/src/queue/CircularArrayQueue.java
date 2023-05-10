@@ -4,6 +4,7 @@ import java.util.NoSuchElementException;
 
 /**
  * An implementation of a queue as a circular array.
+ * TODO - Bruger ikke generics
  */
 public class CircularArrayQueue implements QueueI {
 	private Object[] elements;
