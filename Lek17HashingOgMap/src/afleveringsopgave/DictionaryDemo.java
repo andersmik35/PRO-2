@@ -1,12 +1,10 @@
 package afleveringsopgave;
 
-import dictionaryelev.Dictionary;
-import dictionaryelev.DictionaryLinked;
-
 public class DictionaryDemo {
 
 	public static void main(String[] args) {
-		Dictionary<Integer, String> dictionary = new DictionaryHashMap<>();
+		Dictionary<Integer, String> dictionary = new DictionaryArray<>();
+		//Dictionary<Integer, String> dictionary = new DictionaryArray<>();
 		System.out.println(dictionary.isEmpty());
 		System.out.println(dictionary.size());
 

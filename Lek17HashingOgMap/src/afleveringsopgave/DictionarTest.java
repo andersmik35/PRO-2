@@ -1,7 +1,6 @@
 package afleveringsopgave;
 
-import dictionaryelev.Dictionary;
-import dictionaryelev.DictionaryLinked;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,8 +14,8 @@ public class DictionarTest {
     @BeforeEach
     public void setUp() throws Exception {
         // dictionary = new DictionaryHashMap<>();
-        dictionary = new DictionaryLinked<>();
-        
+        //dictionary = new DictionaryLinked<>();
+        dictionary = new DictionaryArray<>();
     }
     
     @Test
