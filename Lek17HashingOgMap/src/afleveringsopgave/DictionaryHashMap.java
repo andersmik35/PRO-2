@@ -9,16 +9,12 @@ public class DictionaryHashMap<K, V> implements Dictionary<K, V> {
     private static int N = 10;
     private static double loadFactorLimit = 0.2;
 
-
-
-
     public DictionaryHashMap() {
         tabel = new HashMap[N];
         for (int i = 0; i < N; i++) {
             tabel[i] = new HashMap<K, V>();
         }
     }
-
 
     @Override
     public V get(K key) {

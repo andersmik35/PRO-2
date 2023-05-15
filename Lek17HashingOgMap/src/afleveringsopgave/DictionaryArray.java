@@ -14,9 +14,6 @@ public class DictionaryArray<K, V> implements Dictionary<K, V> {
     private  ArrayList<Pair>[] table;
     private int size;
 
-    /**
-     * DictionaryArrayList constructor comment.
-     */
     public DictionaryArray() {
         table = new ArrayList[INITIAL_CAPACITY];
         for (int i = 0; i < INITIAL_CAPACITY; i++) {

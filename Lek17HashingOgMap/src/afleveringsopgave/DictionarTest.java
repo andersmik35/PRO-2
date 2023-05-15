@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class DictionarTest {
     Dictionary<Integer, String> dictionary;
-   
 
     @BeforeEach
     public void setUp() throws Exception {
