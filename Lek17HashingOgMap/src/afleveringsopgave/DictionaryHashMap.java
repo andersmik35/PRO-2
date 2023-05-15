@@ -1,7 +1,5 @@
 package afleveringsopgave;
 
-import dictionaryelev.Dictionary;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,9 +10,7 @@ public class DictionaryHashMap<K, V> implements Dictionary<K, V> {
     private static double loadFactorLimit = 0.2;
 
 
-    /**
-     * HashingMap constructor comment.
-     */
+
 
     public DictionaryHashMap() {
         tabel = new HashMap[N];
@@ -22,6 +18,7 @@ public class DictionaryHashMap<K, V> implements Dictionary<K, V> {
             tabel[i] = new HashMap<K, V>();
         }
     }
+
 
     @Override
     public V get(K key) {

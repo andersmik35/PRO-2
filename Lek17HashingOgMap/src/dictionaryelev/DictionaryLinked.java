@@ -1,7 +1,5 @@
 package dictionaryelev;
 
-import java.util.ConcurrentModificationException;
-
 public class DictionaryLinked<K, V> implements Dictionary<K, V> {
 
     private Node start;

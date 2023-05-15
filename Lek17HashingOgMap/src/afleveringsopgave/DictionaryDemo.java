@@ -3,8 +3,8 @@ package afleveringsopgave;
 public class DictionaryDemo {
 
 	public static void main(String[] args) {
-		Dictionary<Integer, String> dictionary = new DictionaryArray<>();
 		//Dictionary<Integer, String> dictionary = new DictionaryArray<>();
+		Dictionary<Integer, String> dictionary = new DictionaryHashMap<>();
 		System.out.println(dictionary.isEmpty());
 		System.out.println(dictionary.size());
 

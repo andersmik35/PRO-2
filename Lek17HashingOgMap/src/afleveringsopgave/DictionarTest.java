@@ -13,9 +13,9 @@ public class DictionarTest {
 
     @BeforeEach
     public void setUp() throws Exception {
-        // dictionary = new DictionaryHashMap<>();
+        dictionary = new DictionaryHashMap<>();
         //dictionary = new DictionaryLinked<>();
-        dictionary = new DictionaryArray<>();
+        //dictionary = new DictionaryArray<>();
     }
     
     @Test

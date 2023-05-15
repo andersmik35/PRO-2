@@ -41,6 +41,7 @@ public class Bil {
                 '}';
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,6 +49,7 @@ public class Bil {
         Bil bil = (Bil) o;
         return Objects.equals(regNr, bil.regNr) && Objects.equals(maerke, bil.maerke);
     }
+
 
     @Override
     public int hashCode() {
