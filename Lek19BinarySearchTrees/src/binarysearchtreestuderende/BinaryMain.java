@@ -10,9 +10,9 @@ public class BinaryMain {
         bsn.add(30);
         bsn.add(25);
         bsn.add(15);
-        bsn.add(77);
         bsn.add(90);
-        System.out.println("Expected: 11 15 22 25 30 45 77 80 90");
+        bsn.add(88);
+        System.out.println("Expected: 11 15 22 25 30 45 77 88 90");
         System.out.println("Actual ");
         bsn.print();
         System.out.println("Max: " + bsn.findMax());

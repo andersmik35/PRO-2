@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Eksamensforberedelse/Eksamensforberedelse.iml" filepath="$PROJECT_DIR$/Eksamensforberedelse/Eksamensforberedelse.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek01Rekursion/Lek01Rekursion.iml" filepath="$PROJECT_DIR$/Lek01Rekursion/Lek01Rekursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek02Rekursion/Lek02Rekursion.iml" filepath="$PROJECT_DIR$/Lek02Rekursion/Lek02Rekursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek03DelLoesOgKombiner/Lek03DelLoesOgKombiner.iml" filepath="$PROJECT_DIR$/Lek03DelLoesOgKombiner/Lek03DelLoesOgKombiner.iml" />
